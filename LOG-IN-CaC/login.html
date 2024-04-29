@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style-login.css">
+    <script src="https://kit.fontawesome.com/a291c56e45.js" crossorigin="anonymous"></script>
+    <title>LOGIN-CaC</title>
+</head>
+<body>
+       <header>
+
+        <div class="header-box1">
+            <div class="logo">
+                <img src="" alt=""/>
+                <h2 class="nombre-empresa">PHLOX</h2>
+            </div>
+            <nav>
+                <a href="">inicio</a>
+                <a href="">tienda</a>
+                <a href="">blog</a>
+                <a href="">contacto</a>
+            </nav>
+        </div>      
+       
+        <div class="header-box2">
+            <ul>
+                <li>login</li>
+                <li><img src="img/search.svg" alt=""/></li>
+                <li><img src="img/bag.svg" alt=""/></li>
+                
+            </ul>
+        </div>
+    </header>
+
+<!-- MAIN LOGIN -->
+
+    <div class="main-login-container">
+        <main class="main-login-box">
+            <img class="main-login-img" src="./img/create-account-img.png"  alt="imagen-login">
+            <div class="main-item-box">
+                <div class="main-item">
+                <h2>Log in to PHLOX</h2>
+                <br>
+                <p class="observation">Enter your details below</p>
+                <!-- <br> -->
+                </div>
+                <form id="loginForm">
+               
+                <div class="form-item">
+                    <!-- <label for="email"><strong>Email:</strong></label> -->
+                    <input type="email" id="email" name="email" placeholder="email" required>
+                </div>
+                <br>
+                <div class="form-item">
+                    <!-- <label for="password"><strong>Password:</strong></label> -->
+                    <input type="password" id="password" name="password" placeholder="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{11,}$" required>
+                </div>
+                <br>
+               <div class="login-footer">
+                    <div class="submit">
+                    <input class="" type="submit" value="Log In">
+                    </div>
+                
+            
+                <br>
+                <div class="main-item-box-footer">
+                    <p ><a class="login-a" href="../FORGET-PASSWORD-CaC/forget-password.html" target="_blank">Forget Password?</a></p>
+                </div>
+                </div>
+            </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="login.js"></script>
+
+    <!-- FIN MAIN LOGIN -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="foo-section">
+                <div class="foo-brand" >
+                    <span class="foo-name-brand">PHLOX</span>
+                </div>
+                <div>
+                    <a href="" class="foo-subtitle">About</a>
+                </div>
+                <div>
+                    <label for="mail" class="foo-subtitle">Newsletter</label>
+                    <div class="subscribe-container">
+                        <input type="email" name="mail" id="mail" value="default@example.com">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="foo-section">
+                <div class="foo-title">
+                    <span>Contact Us</span>
+                </div>
+                <div class="foo-contact foo-subtitle">
+                    <span>Street 0000,City</span>
+                    <span>CP 0000, Country</span>
+                    <span>phlox@mail.com</span>
+                    <span>9+54 000 0000000 </span>
+                </div>
+            </div>
+            <div class="foo-section">
+                <div class="foo-title">
+                    <span>Account</span>
+                </div>
+                <div class="foo-subtitle">
+                    <a href="">My Account</a>
+                    <a href="">Login/Register</a>
+                    <a href="">Cart</a>
+                    <a href="">Whishlist</a>
+                    <a href="">Shop</a>
+                </div>
+                </div>
+            <div class="foo-section">
+                <div class="foo-title">
+                    <span>Quick Link</span>
+                </div>
+                <div class="foo-subtitle">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms Of Use</a>
+                    <a href="">FAQ</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+            <div class="foo-section">
+                <div class="foo-title">
+                    <span>Download App</span>
+                </div>
+                <div id="foo-comments">
+                    <span>Save $3 with App New User Only</span>
+                </div>
+                <div class="foo-platform-digital">
+                    <div>
+                        <a href="">
+                            <img src="./Assets/Img/img-QR-Code.png" alt="QR Code">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="./Assets/Img/img-Google-Play.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./Assets/Img/img-App-Store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="foo-social-media">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f fa-xl"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter fa-xl"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="foo-copyright">
+            <span>&copy; Copyright 2024. All right reserved</span>
+        </div>
+
+    </footer> 
+</body>
+</html>
