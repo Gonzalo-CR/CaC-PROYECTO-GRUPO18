@@ -3,89 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--CSS-->
+    <link rel="stylesheet" href="./Css/normalize.css"/>
+    <link rel="stylesheet" href="./Css/productos.css"/> 
+    <link rel="stylesheet" href="./Css/footer.css"/>
+    <link rel="stylesheet" href="./Css/header.css"/>
+    <link rel="stylesheet" href="./Css/home.css"/>
+   
+
+  <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/a291c56e45.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
+
 <body>
-    <header>
+      <header>
+        <nav class="nav-container">
+          <div class="menu-mobile">
+            <a href="#">
+              <i class="fa-solid fa-bars" id="clickMe" title="Menu"></i>
+            </a>
+          </div>
+          <div class="nav-menu">
+              <div class="nav-logo">
+                <span>Exclusive</span>
+              </div>
+              <div class="nav-section">
+                  <a href="#" title="Home">Home</a>
+                  <a href="./Html/error.html" title="Contact">Contact</a>
+                  <a href="./Html/error.html" title="About">About</a>
+                  <a href="./Html/signUp.html" title="Sign Up">Sign Up</a>
+              </div>
+          </div>
+          <div class="nav-search">
+              <div class="nav-input">
+                <input type="search" name="" id="" placeholder="Search...">
+              </div>
+              <div class="nav-icons">
+                <a href="./Html/error.html" title="WishList">
+                  <i class="fa-regular fa-heart fa-xl wishList"></i>
+                </a>
+                <a href="./Html/cart.html" title="Cart">
+                  <i class="cart-icon"></i>
+                </a>
+                <a href="./Html/logIn.html" class="logIn-icon" title="LogIn ">
+                  <i class="fa-regular fa-user fa-xl"></i>
+                </a>
+              </div>
+          </div>
+        </nav>
+      </header> 
 
-        <div class="header-box1">
-            <div class="logo">
-                <img src="" alt=""/>
-                <h2 class="nombre-empresa">PHLOX</h2>
+
+      <main id="main-home">
+        <!-- Meli----Seccion de menú acordeon -->   
+        <section class="menu-section-container">
+          <div class="menu-section-accordeon"> 
+            <div>
+              <a href="./Html/error.html" title="Home">Home</a>
             </div>
-            <nav>
-                <a href="">inicio</a>
-                <a href="">tienda</a>
-                <a href="">blog</a>
-                <a href="">contacto</a>
-            </nav>
-        </div>      
-       
-        <div class="header-box2">
-            <ul>
-                <li><a href="CREATE-ACCOUNT-CaC/create-account.html" alt="crear cuenta" target="_blank">Log In</a></li>
-                <li><img src="img/search.svg" alt=""/></li>
-                <li><img src="img/bag.svg" alt=""/></li>
-                
-            </ul>
+            <div>
+              <a href="./Html/error.html" title="Contact">Contact</a>
+            </div>
+            <div>
+              <a href="./Html/error.html" title="About">About</a>
+            </div>
+            <div>
+              <a href="./Html/error.html" title="Quick Link">Quick Link</a>
+            </div>
+            <div>
+              <a href="./Html/error.html" title="DownLoad App">DownLoad App</a>
+            </div>
+          </div>
+          <div class="menu-section-divider"></div>
+          <aside>
+            <div class="menu-section-subtittle">
+              <img src="./Assets/Img/principal main/Apple_gray_logo 1.png" alt="">
+              <h3>i Phone 14 Series </h3>
+            </div>
+            <div class="menu-section-img">
+              <img src="./Assets/Img/principal main/imageHeader.png" alt="Imagen de cabecera">
+            </div>
+            <div class="menu-section-tittle">
+              <h3>Up to 10% off Voucher</h3>  
+            </div>
+          </aside>
+        </section>
+<!-- ------------------------------------- -->
+      <section class="product-container">
+        <div class="title__colour">
+            <p>Este mes</p>
         </div>
-    </header>
+        <h2 class="title__h2">Productos mas buscados</h2> 
 
-    <main>
-        
-        <section id="section-categoria">
-
-            <div class="titulo-color">
-                <p>Categoria</p>
+        <article class="items-related">
+           
+          <section class="items-related__items">
+            <div class="items__cart">
+              <div class="cart__top">
+                <p class="cart__top-descuento">-40%</p>
+                <span class="cart__top-buttons">
+                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <img
+                src="./Assets/Img/productos/joystick_relacionado1.webp"
+                alt=""
+                class="cart__img-product"
+              />
+              <div class="cart__carrito hidden">
+                <p>Agregar al carrito</p>
+              </div>
+              <h3>Joystick inalámbrico Redragon Harrow</h3>
+              <p class="cart__price">$120 <span>$160</span></p>
             </div>
 
-            <h2 class="titulo-h2">Categorias</h2>  
+            <div class="items__cart">
+              <div class="cart__top">
+                <p class="cart__top-descuento">-40%</p>
+                <span class="cart__top-buttons">
+                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <img
+                src="./Assets/Img/productos/joystick_relacionado2.webp"
+                alt=""
+                class="cart__img-product"
+              />
+              <h3>Joystick Redragon Saturn G807</h3>
+              <p class="cart__price">$120 <span>$160</span></p>
+            </div>
 
-            <div class="cont-categorias">
-                <a href="">
-                    <div class="categoria">
-                        <img src="./img/categorias/celular.svg" alt="">
-                        <p>celulares</p>
-                     </div>
+            <div class="items__cart">
+              <div class="cart__top">
+                <p class="cart__top-descuento">-40%</p>
+                <span class="cart__top-buttons">
+                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <img
+                src="./Assets/Img/productos/joystick_relacionado3.webp"
+                alt=""
+                class="cart__img-product"
+              />
+              <h3>Joystick Microsoft Xbox</h3>
+              <p class="cart__price">$120 <span>$160</span></p>
+            </div>
+
+            <div class="items__cart">
+              <div class="cart__top">
+                <p class="cart__top-descuento">-40%</p>
+                <span class="cart__top-buttons">
+                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <img
+                src="./Assets/Img/productos/joystick_relacionado4.webp"
+                alt=""
+                class="cart__img-product"
+              />
+              <h3>Joystick inalámbrico Dehuka</h3>
+              <p class="cart__price">$120 <span>$160</span></p>
+            </div>
+          </section>
+          
+
+
+            <div class="button-container">
+
+              <button type="submit" class="button__home">Mira Mas Productos</button>
+            
+            </div>
+            
+          </article>
+  
+      </section>
+
+        
+        <section id="section-category">
+
+            <div class="title__colour">
+                <h3>Categoria</h3>
+            </div>
+
+            <h2 class="title__h2">Categorias</h2>  
+
+            <div class="category-container">
+
+                <a href="./Html/product.html">
+                    <div class="category-grid-1">
+                        <div class="category">
+                            <img src="./Assets/Img/categorias/celular.svg" alt="">
+                            <p>celulares</p>
+                        </div>
+                    </div>
                 </a>
                 
                 <a href="">
-                <div class="categoria">
-                    <img src="./img/categorias/computadora.svg" alt="">
-                    <p>computadoras</p>
-                </div>
+                    <div class="category-grid-2">
+                        <div class="category">
+                             <img src="./Assets/Img/categorias/computadora.svg" alt="">
+                             <p>computadoras</p>
+                        </div>
+                    </div>
                </a>
 
                 <a href="">
-                <div class="categoria">
-                   <img src="./img/categorias/smartwatch.svg" alt="">
-                    <p>smartwatch</p>
-                </div>
+                    <div class="category-grid-3">
+                        <div class="category">
+                            <img src="./Assets/Img/categorias/smartwatch.svg" alt="">
+                            <p>smartwatch</p>
+                        </div>
+                    </div>
                 </a>
 
                 <a href="">
-                <div class="categoria">
-                    <img src="./img/categorias/camara.svg" alt="">
-                    <p>camaras</p>
-                </div>
+                    <div class="category-grid-4">
+                        <div class="category">
+                            <img src="./Assets/Img/categorias/camara.svg" alt="">
+                            <p>camaras</p>
+                        </div>
+                    </div>
                  </a>
     
                  <a href="">
-                <div class="categoria">
-                    <img src="./img/categorias/auricular.svg" alt="">
-                    <p>auriculares</p>
-                </div>
+                    <div class="category-grid-5">
+                        <div class="category">
+                            <img src="./Assets/Img/categorias/auricular.svg" alt="">
+                            <p>auriculares</p>
+                        </div>
+                    </div>
                 </a>
                 
                 <a href="">
-                <div class="categoria">
-                    <img src="./img/categorias/consola.svg" alt="">
-                    <p>consolas</p>
-                </div>
+                    <div class="category-grid-6">
+                        <div class="category">
+                            <img src="./Assets/Img/categorias/consola.svg" alt="">
+                            <p>consolas</p>
+                        </div>
+                    </div>
                 </a>
 
             </div>
@@ -94,178 +261,457 @@
         </section>
 
 
-        <section id="section-novedades">
 
-            <div class="titulo-color">
+
+        <section id="section-mejores-productos">
+
+            <div class="title__colour">
+                <h3>Este mes</h3>
+            </div>
+
+
+            <div class="container-title">
+                <div>
+                    <h2 class="title__h2">Productos mas buscados</h2> 
+                </div>
+                <div>
+                    <button type="submit" class="button__home">Mas Productos</button>
+                </div>
+            </div>
+           
+
+            <article class="items-related">
+               
+              <section class="items-related__items">
+                <div class="items__cart">
+                  <div class="cart__top">
+                    <p class="cart__top-descuento">-40%</p>
+                    <span class="cart__top-buttons">
+                      <i class="fa-regular fa-eye"></i>
+                      <i class="fa-regular fa-heart"></i>
+                    </span>
+                  </div>
+                  <img
+                    src="./Assets/Img/productos/joystick_relacionado1.webp"
+                    alt=""
+                    class="cart__img-product"
+                  />
+                  <div class="cart__carrito hidden">
+                    <p>Agregar al carrito</p>
+                  </div>
+                  <h3>Joystick inalámbrico Redragon Harrow</h3>
+                  <p class="cart__price">$120 <span>$160</span></p>
+                </div>
+    
+                <div class="items__cart">
+                  <div class="cart__top">
+                    <p class="cart__top-descuento">-40%</p>
+                    <span class="cart__top-buttons">
+                      <i class="fa-regular fa-eye"></i>
+                      <i class="fa-regular fa-heart"></i>
+                    </span>
+                  </div>
+                  <img
+                    src="./Assets/Img/productos/joystick_relacionado2.webp"
+                    alt=""
+                    class="cart__img-product"
+                  />
+                  <h3>Joystick Redragon Saturn G807</h3>
+                  <p class="cart__price">$120 <span>$160</span></p>
+                </div>
+    
+                <div class="items__cart">
+                  <div class="cart__top">
+                    <p class="cart__top-descuento">-40%</p>
+                    <span class="cart__top-buttons">
+                      <i class="fa-regular fa-eye"></i>
+                      <i class="fa-regular fa-heart"></i>
+                    </span>
+                  </div>
+                  <img
+                    src="./Assets/Img/productos/joystick_relacionado3.webp"
+                    alt=""
+                    class="cart__img-product"
+                  />
+                  <h3>Joystick Microsoft Xbox</h3>
+                  <p class="cart__price">$120 <span>$160</span></p>
+                </div>
+    
+                <div class="items__cart">
+                  <div class="cart__top">
+                    <p class="cart__top-descuento">-40%</p>
+                    <span class="cart__top-buttons">
+                      <i class="fa-regular fa-eye"></i>
+                      <i class="fa-regular fa-heart"></i>
+                    </span>
+                  </div>
+                  <img
+                    src="./Assets/Img/productos/joystick_relacionado4.webp"
+                    alt=""
+                    class="cart__img-product"
+                  />
+                  <h3>Joystick inalámbrico Dehuka</h3>
+                  <p class="cart__price">$120 <span>$160</span></p>
+                </div>
+              </section>
+
+              </article>
+      
+      
+              
+      
+        </section>
+
+
+
+            <img  id="img-home" src="./Assets/Img/productos/Frame 600.png" alt="">
+            
+        
+
+
+
+        <section id="section-mejores-productos">
+
+            <div class="title__colour">
+                <p>Nuestros productos</p>
+            </div>
+            <h2 class="title__h2">Explora nuestros productos</h2> 
+
+            <article class="items-related">
+               
+              <section class="items-related__items">
+                <div class="items__cart">
+                  <div class="cart__top">
+                    <p class="cart__top-descuento">-40%</p>
+                    <span class="cart__top-buttons">
+                      <i class="fa-regular fa-eye"></i>
+                      <i class="fa-regular fa-heart"></i>
+                    </span>
+                  </div>
+                  <img
+                    src="./Assets/Img/productos/joystick_relacionado1.webp"
+                    alt=""
+                    class="cart__img-product"
+                  />
+                  <div class="cart__carrito hidden">
+                    <p>Agregar al carrito</p>
+                  </div>
+                  <h3>Joystick inalámbrico Redragon Harrow</h3>
+                  <p class="cart__price">$120 <span>$160</span></p>
+                </div>
+    
+                <div class="items__cart">
+                  <div class="cart__top">
+                    <p class="cart__top-descuento">-40%</p>
+                    <span class="cart__top-buttons">
+                      <i class="fa-regular fa-eye"></i>
+                      <i class="fa-regular fa-heart"></i>
+                    </span>
+                  </div>
+                  <img
+                    src="./Assets/Img/productos/joystick_relacionado2.webp"
+                    alt=""
+                    class="cart__img-product"
+                  />
+                  <h3>Joystick Redragon Saturn G807</h3>
+                  <p class="cart__price">$120 <span>$160</span></p>
+                </div>
+    
+                <div class="items__cart">
+                  <div class="cart__top">
+                    <p class="cart__top-descuento">-40%</p>
+                    <span class="cart__top-buttons">
+                      <i class="fa-regular fa-eye"></i>
+                      <i class="fa-regular fa-heart"></i>
+                    </span>
+                  </div>
+                  <img
+                    src="./Assets/Img/productos/joystick_relacionado3.webp"
+                    alt=""
+                    class="cart__img-product"
+                  />
+                  <h3>Joystick Microsoft Xbox</h3>
+                  <p class="cart__price">$120 <span>$160</span></p>
+                </div>
+    
+                <div class="items__cart">
+                  <div class="cart__top">
+                    <p class="cart__top-descuento">-40%</p>
+                    <span class="cart__top-buttons">
+                      <i class="fa-regular fa-eye"></i>
+                      <i class="fa-regular fa-heart"></i>
+                    </span>
+                  </div>
+                  <img
+                    src="./Assets/Img/productos/joystick_relacionado4.webp"
+                    alt=""
+                    class="cart__img-product"
+                  />
+                  <h3>Joystick inalámbrico Dehuka</h3>
+                  <p class="cart__price">$120 <span>$160</span></p>
+                </div>
+              </section>
+                
+              </article>
+              <article class="items-related">
+               
+                <section class="items-related__items">
+                  <div class="items__cart">
+                    <div class="cart__top">
+                      <p class="cart__top-descuento">-40%</p>
+                      <span class="cart__top-buttons">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./Assets/Img/productos/joystick_relacionado1.webp"
+                      alt=""
+                      class="cart__img-product"
+                    />
+                    <div class="cart__carrito hidden">
+                      <p>Agregar al carrito</p>
+                    </div>
+                    <h3>Joystick inalámbrico Redragon Harrow</h3>
+                    <p class="cart__price">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__cart">
+                    <div class="cart__top">
+                      <p class="cart__top-descuento">-40%</p>
+                      <span class="cart__top-buttons">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./Assets/Img/productos/joystick_relacionado2.webp"
+                      alt=""
+                      class="cart__img-product"
+                    />
+                    <h3>Joystick Redragon Saturn G807</h3>
+                    <p class="cart__price">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__cart">
+                    <div class="cart__top">
+                      <p class="cart__top-descuento">-40%</p>
+                      <span class="cart__top-buttons">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./Assets/Img/productos/joystick_relacionado3.webp"
+                      alt=""
+                      class="cart__img-product"
+                    />
+                    <h3>Joystick Microsoft Xbox</h3>
+                    <p class="cart__price">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__cart">
+                    <div class="cart__top">
+                      <p class="cart__top-descuento">-40%</p>
+                      <span class="cart__top-buttons">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./Assets/Img/productos/joystick_relacionado4.webp"
+                      alt=""
+                      class="cart__img-product"
+                    />
+                    <h3>Joystick inalámbrico Dehuka</h3>
+                    <p class="cart__price">$120 <span>$160</span></p>
+                  </div>
+                </section>
+
+  
+              </article>
+              <div class="button-container">
+                <button type="submit" class="button__home">Mira Mas Productos</button>
+              
+              </div>    
+      
+              
+      
+        </section>
+
+
+        <section id="section-news">
+
+            <div class="title__colour">
                 <p>Novedades</p>
             </div>
-            <h2 class="titulo-h2">Nuevos productos</h2> 
+            <h2 class="title__h2">Nuevos productos</h2> 
 
-            <div class="cont-novedades">
-                <div class="item1">
-                    <div class="texto-novedad">
-                        <p class="titulo-novedad">PlayStation 5</p>
+            <div class="news-container">
+              
+                <div class="item__new item_1">
+                    <div class="new__text">
+                        <p class="new__title">PlayStation 5</p>
                         <p>Sale a la venta la versión en blanco y negro de la PS5.</p>
                         <a href="">comprar ahora</a>
                     </div>
 
                 </div>
-                <div class="item2">
-                    <div class="texto-novedad">
-                        <p class="titulo-novedad">Smartphones</p>
+                <div class="item__new item_2">
+                    <div class="new__text">
+                        <p class="new__title">Smartphones</p>
                         <p>Nueva llegada del Galaxy S23 FE cream 128GB</p>
                         <a href="">comprar ahora</a>
                     </div>
                 </div>
-                <div class="item3">
-                    <div class="texto-novedad">
-                        <p class="titulo-novedad">Tablets</p>
+                <div class="item__new item_3">
+                    <div class="new__text">
+                        <p class="new__title">Tablets</p>
                         <p>Galaxy Tab S9 FE Gray 128gb</p>
                         <a href="">comprar ahora</a>
                     </div>
                 </div>
-                <div class="item4">
-                    <div class="texto-novedad">
-                        <p class="titulo-novedad">Auriculares</p>
+                <div class="item__new item_4">
+                    <div class="new__text">
+                        <p class="new__title">Auriculares</p>
                         <p>Nuevos Galaxy Buds FE Graphite </p>
                         <a href="">comprar ahora</a>
                     </div>
                 </div>
             </div>
-
-
-
-
         </section>
 
 
 
 
-        <section class="section-servicios">
-            <div class="cont-servicios">
-                <div class="servicio">
-                    <img src="./img/servicios/Services.svg" alt=""/>
-                    <p class="titulo-servicio">ENTREGA GRATUITA Y RÁPIDA</p>
-                    <p>Para los pedidos superiores a $140</p>
+        <section class="services-container"> 
+
+                <div class="service">
+                    <img src="./Assets/Img/servicios/Services.svg" alt=""/>
+                    <p class="service__title">ENTREGA GRATUITA Y RÁPIDA</p>
+                    <p>Solo pedidos superiores a $140</p>
                 </div>
 
-                <div class="servicio">
-                    <img src="./img/servicios/Services (1).svg" alt=""/>
-                    <p class="titulo-servicio">SERVICIO AL CLIENTE 24/7</p>
+                <div class="service">
+                    <img src="./Assets/Img/servicios/Services (1).svg" alt=""/>
+                    <p class="service__title">SERVICIO AL CLIENTE 24/7</p>
                     <p>Atención al cliente amigable 24/7</p>
                 </div>
 
-                <div class="servicio">
-                    <img src="./img/servicios/Services3.svg" alt=""/>
-                    <p class="titulo-servicio">GARANTÍA </p>
+                <div class="service">
+                    <img src="./Assets/Img/servicios/Services3.svg" alt=""/>
+                    <p class="service__title">GARANTÍA </p>
                     <p>Devolvemos dinero en 30 días.</p>
                 </div>
-             
-                
-            </div>
-
+       
         </section>
 
 
     </main>
 
 
-
-
-
-    <footer>
-        <div class="footer-container">
-            <div class="foo-section">
-                <div class="foo-brand" >
-                    <span class="foo-name-brand">PHLOX</span>
-                </div>
-                <div>
-                    <a href="" class="foo-subtitle">About</a>
-                </div>
-                <div>
-                    <label for="mail" class="foo-subtitle">Newsletter</label>
-                    <div class="subscribe-container">
-                        <input type="email" name="mail" id="mail" value="default@example.com">
-                        <button type="submit">Subscribe</button>
-                    </div>
-                </div>
+    <footer id="foo-contain">
+      <div class="footer-container">
+        <div class="foo-section">
+            <div class="foo-brand" >
+                <span class="foo-name-brand">Exclusive</span>
             </div>
-            <div class="foo-section">
-                <div class="foo-title">
-                    <span>Contact Us</span>
-                </div>
-                <div class="foo-contact foo-subtitle">
-                    <span>Street 0000,City</span>
-                    <span>CP 0000, Country</span>
-                    <span>phlox@mail.com</span>
-                    <span>9+54 000 0000000 </span>
-                </div>
+            <div>
+                <a href="#" class="foo-subtitle foo-subtitle-mobile" title="About Us">About Us</a>
             </div>
-            <div class="foo-section">
-                <div class="foo-title">
-                    <span>Account</span>
-                </div>
-                <div class="foo-subtitle">
-                    <a href="">My Account</a>
-                    <a href="">Login/Register</a>
-                    <a href="">Cart</a>
-                    <a href="">Whishlist</a>
-                    <a href="">Shop</a>
-                </div>
-                </div>
-            <div class="foo-section">
-                <div class="foo-title">
-                    <span>Quick Link</span>
-                </div>
-                <div class="foo-subtitle">
-                    <a href="">Privacy Policy</a>
-                    <a href="">Terms Of Use</a>
-                    <a href="">FAQ</a>
-                    <a href="">Contact</a>
-                </div>
-            </div>
-            <div class="foo-section">
-                <div class="foo-title">
-                    <span>Download App</span>
-                </div>
-                <div id="foo-comments">
-                    <span>Save $3 with App New User Only</span>
-                </div>
-                <div class="foo-platform-digital">
-                    <div>
-                        <a href="">
-                            <img src="./Assets/Img/img-QR-Code.png" alt="QR Code">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <img src="./Assets/Img/img-Google-Play.png" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./Assets/Img/img-App-Store.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="foo-social-media">
-                    <a href="">
-                        <i class="fa-brands fa-facebook-f fa-xl"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-twitter fa-xl"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-instagram fa-xl"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-linkedin-in fa-xl"></i>
-                    </a>
+            <div>
+                <label for="mail" class="foo-subtitle">Newsletter</label>
+                <div class="subscribe-container">
+                    <input type="email" name="mail" id="mail" value="default@example.com">
+                    <button type="submit">Subscribe</button>
                 </div>
             </div>
         </div>
-        <div class="foo-copyright">
-            <span>&copy; Copyright 2024. All right reserved</span>
+        <div class="foo-section section-mobile">
+            <div class="foo-title">
+                <span>Support</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="foo-subtitle">
+                <span>Street 0000,City</span>
+                <span>Zip 0000, Country</span>
+                <span><a href="mailto:exclusive@mail.com">exclusive@mail.com</a></span>
+                <span><a href="https://wa.me/+5491112345678">9+54 000 0000000</a> </span>
+            </div>
         </div>
+        <div class="foo-section section-mobile">
+            <div class="foo-title">
+                <span>Account</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="foo-subtitle">
+                <a href="./Html/account.html" title="My Account">My Account</a>
+                <a href="./Html/logIn.html" title="Login/Register">Login/Register</a>
+                <a href="./Html/cart.html" title="Cart">Cart</a>
+                <a href="./Html/error.html"title="WishList">Wishlist</a>
+                <a href="./Html/product.html" title="Shop">Shop</a>
+            </div>
+            </div>
+        <div class="foo-section section-mobile">
+            <div class="foo-title">
+                <span>Quick Link</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="foo-subtitle">
+                <a href="./Assets/Img/signUp/politica_de_privacidad.pdf" title="Abrir Política de Privacidad en una nueva pestaña">Privacy Policy</a>
+                <a href="./Assets/Img/signUp/terminos_y_condiciones.pdf" title="Abrir Términos y Condiciones en una nueva pestaña">Terms of Use</a>
+                <a href="./Html/error.html" title="FAQ">FAQ</a>
+                <a href="./Html/error.html" title="Contact">Contact</a>
+            </div>
+        </div>
+        <div class="foo-section section-mobile">
+            <div class="foo-title">
+                <span>Download App</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class=" content-media">
+              <div id="foo-comments">
+                <span>Save $3000 with App New User Only</span>
+              </div>
+              <div class="foo-platform-digital">
+                <div>
+                    <a href="">
+                        <img src="./Assets/Img/footer/img-QR-Code.png" alt="QR Code" title="QR Code">
+                    </a>
+                </div>  
+                <div>
+                    <a href="">
+                        <img class="foo-platform-digital-img"src="./Assets/Img/footer/img-Google-Play.png" alt="Google Play" title="Google Play">
+                    </a>
+                    <a href="">
+                        <img class="foo-platform-digital-img"src="./Assets/Img/footer/img-App-Store.png" alt="App Store" title="App Store">
+                    </a>
+                </div>
+              </div>
+              <div class="foo-social-media">
+                <a href="https://facebook.com/exclusive" target="_blank"rel="noopener" title="Facebook">
+                    <i class="fa-brands fa-facebook-f fa-xl"></i>
+                </a>
+                <a href="https://twitter.com/exclusive"target="_blank"rel="noopener" title="Twitter">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/exclusive/?hl=es-la"target="_blank" rel="noopener" title="Instagram">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/exclusive-techstore"  target="_blank"rel="noopener" title="Linkedin">
+                    <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                </a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="foo-copyright">
+        <span>&copy; Copyright 2024. All right reserved</span>
+    </div>
+    </footer>
+  
+  <!--JAVASCRIPT-->
+    <script src="./Js/index.js"></script>
 
-    </footer> 
 </body>
 </html>
